@@ -1,0 +1,146 @@
+body {
+    background-color: #232323;
+    margin: 0;
+    font-family: "Montserrat", "Avenir";
+}
+
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom:30%;
+    float: left;
+    margin:1.66%;
+    box-shadow: 0 0 5px #228DFF;
+    border-radius: 25px;
+    transition: background 0.3s;
+    /*transition is not friendly for all browsers
+    webkit is an engine that browsers use (like safari)
+    moz is for mozilla*/
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+}
+
+#container {
+    /* 20 px is margin on top bottom, auto is centerering*/
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    
+    font-weight: normal;
+    text-transform: uppercase;
+    
+}
+
+#title {
+    font-family: 'Monoton';
+    font-size: 50px;
+    color: #CAE4FF;
+    text-shadow: 0 0 20px #228DFF;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    margin: 15px 0;
+    padding: 15px 0;
+    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon 1.5s ease-in-out infinite alternate;
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+
+
+#subtitle {
+    font-family: 'Damion';
+    font-size: 25px;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    color: #AEFFE5;
+    text-shadow: 0 0 15px #10FFB1;
+    /* color: #FFC810; */
+  }
+
+#colorDisplay {
+    font-family: 'Damion';
+    font-size: 100%;
+    color: white;
+    color: #CAE4FF;
+    text-shadow: 0 0 20px #FFC810;
+    /* text-shadow: 0 0 20px #CAE4FF;; */
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+    color: #CAE4FF;
+    text-shadow: 0 0 20px #FFC810;
+}
+
+#stripe {
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.selected {
+    border: 2px solid #228DFF;
+    border-radius: 30px;
+    color: #AEFFE5;
+    text-shadow: 0 0 15px #10FFB1;
+}
+
+button {
+    font-family: 'Damion';
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    color: #3EC797;
+    letter-spacing: 1px;
+    font-size: inherit;
+    outline: none;
+    transition: all 0.2s;
+    /*transition is not friendly for all browsers
+    webkit is an engine that browsers use (like safari)
+    moz is for mozilla*/
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+}
+
+button:hover {
+    border-radius: 30px;
+    border: 2px solid #228DFF
+}
+
+h1:hover{
+    color:#ffffff
+}
+
+.newcolors {
+    color: #10FFB1;
+    -webkit-animation: newneon 2s 0s 2 ease-in-out alternate;
+    -moz-animation: newneon 2s 0s 2  ease-in-out alternate;
+    animation: newneon 2s 0s 2  ease-in-out alternate;
+}
+
+@-webkit-keyframes neon {
+    from {
+      text-shadow: 0 0 10px #CAE4FF, 0 0 20px #228DFF, 0 0 30px #228DFF, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF;
+    }
+    to {
+      text-shadow: 0 0 5px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF;
+    }
+  }
+
+@-webkit-keyframes newneon {
+    from {
+        text-shadow: 0 0 2px #10FFB1;
+        color: #10FFB1;
+    }
+    to {
+        text-shadow: 0 0 30px #E3FDF5;
+        color:  #E3FDF5;
+    }
+}
